@@ -1,4 +1,5 @@
 import Header from "./components/header";
+import "./style.css";
 
 function App() {
   return <Header />;
