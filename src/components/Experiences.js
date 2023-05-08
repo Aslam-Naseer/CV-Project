@@ -7,7 +7,7 @@ class Experiences extends Component {
       <div className="experiences">
         <p>Experiences</p>
         <Experience num="1" />
-        <button className="add-exp">Add</button>
+        <button className="add-btn">Add</button>
       </div>
     );
   }
