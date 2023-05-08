@@ -8,7 +8,10 @@ class CvForm extends Component {
     return (
       <div className="cv-form">
         <Personal />
-        <Experiences />
+        <Experiences
+          addExp={this.props.addExp}
+          exps={this.props.cv.experience}
+        />
         <EducationList />
       </div>
     );

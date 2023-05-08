@@ -3,11 +3,20 @@ import Experience from "./Experience";
 
 class Experiences extends Component {
   render() {
+    let c = 0;
+    const expDivs = [];
+    this.props.exps.forEach((expItem) => {
+      c += 1;
+      expDivs.push(<Experience num={c} />);
+    });
+
     return (
       <div className="experiences">
         <p>Experiences</p>
-        <Experience num="1" />
-        <button className="add-btn">Add</button>
+        {expDivs}
+        <button className="add-btn" onClick={this.props.addExp}>
+          Add
+        </button>
       </div>
     );
   }
