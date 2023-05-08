@@ -6,12 +6,12 @@ class Education extends Component {
     const { num } = this.props;
     return (
       <div className="education">
-        <InputBox id={"University-" + num} />
-        <InputBox id={"City-" + num} />
-        <InputBox id={"Dergree-" + num} />
-        <InputBox id={"Subject-" + num} />
-        <InputBox id={"From-" + num} />
-        <InputBox id={"To-" + num} />
+        <InputBox name="University" num={num} />
+        <InputBox name="City" num={num} />
+        <InputBox name="Degree" num={num} />
+        <InputBox name="Subject" num={num} />
+        <InputBox name="From" num={num} />
+        <InputBox name="To" num={num} />
         <button className="del-btn">Delete</button>
       </div>
     );

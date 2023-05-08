@@ -6,11 +6,11 @@ class Personal extends Component {
     return (
       <div className="personal-info">
         <p>Personal Information</p>
-        <InputBox id="name" />
-        <InputBox id="title" />
-        <InputBox id="phone" />
-        <InputBox id="mail" />
-        <InputBox id="place" />
+        <InputBox name="name" />
+        <InputBox name="title" />
+        <InputBox name="phone" />
+        <InputBox name="mail" />
+        <InputBox name="place" />
         <textarea id="descr"></textarea>
       </div>
     );

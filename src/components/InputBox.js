@@ -2,7 +2,8 @@ import { Component } from "react";
 
 class InputBox extends Component {
   render() {
-    return <input id={this.props.id} placeholder={this.props.id} />;
+    const { name, num = "" } = this.props;
+    return <input id={name + num} placeholder={name} />;
   }
 }
 

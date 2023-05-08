@@ -6,11 +6,11 @@ class Experience extends Component {
     const { num } = this.props;
     return (
       <div className="experience">
-        <InputBox id={"Position-" + num} />
-        <InputBox id={"Company-" + num} />
-        <InputBox id={"City-" + num} />
-        <InputBox id={"From-" + num} />
-        <InputBox id={"To-" + num} />
+        <InputBox name="Position" num={num} />
+        <InputBox name="Company" num={num} />
+        <InputBox name="City" num={num} />
+        <InputBox name="From" num={num} />
+        <InputBox name="To" num={num} />
         <button className="del-btn">Delete</button>
       </div>
     );
