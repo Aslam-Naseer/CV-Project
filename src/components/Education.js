@@ -32,7 +32,11 @@ class Education extends Component {
           handleChange={this.props.handleChange}
         />
         <InputBox name="To" num={num} handleChange={this.props.handleChange} />
-        <button className="del-btn" onClick={this.props.delEdu}>
+        <button
+          className="del-btn"
+          onClick={this.props.delEdu}
+          data-num={this.props.num}
+        >
           Delete
         </button>
       </div>

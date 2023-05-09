@@ -51,9 +51,10 @@ class App extends Component {
     });
   }
 
-  delEducation() {
+  delEducation(e) {
+    const n = e.target.dataset.num;
     const arr = [...this.state.cv.education];
-    arr.pop();
+    arr.splice(n, 1);
 
     this.setState({
       cv: {
