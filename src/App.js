@@ -2,13 +2,13 @@ import { Component } from "react";
 import CvForm from "./components/CvForm/CvForm";
 import Header from "./components/CvForm/header";
 import "./style.css";
-import emptyState from "./emptyState";
+import statesEg from "./emptyState";
 
 class App extends Component {
   constructor() {
     super();
 
-    this.state = { cv: emptyState };
+    this.state = { cv: statesEg.emptyState };
     this.addExperience = this.addExperience.bind(this);
     this.delExperience = this.delExperience.bind(this);
     this.addEducation = this.addEducation.bind(this);
@@ -18,6 +18,7 @@ class App extends Component {
     this.handleChangeEducation = this.handleChangeEducation.bind(this);
 
     this.showCv = this.showCv.bind(this);
+    this.loadEg = this.loadEg.bind(this);
   }
 
   addExperience() {
@@ -115,6 +116,10 @@ class App extends Component {
     console.log(this.state.cv);
   }
 
+  loadEg() {
+    this.setState({ cv: statesEg.exampleState });
+  }
+
   render() {
     return (
       <div>
@@ -130,6 +135,7 @@ class App extends Component {
           changeEducation={this.handleChangeEducation}
         />
         <button onClick={this.showCv}>Show</button>
+        <button onClick={this.loadEg}>Load</button>
       </div>
     );
   }
