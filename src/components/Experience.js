@@ -11,7 +11,9 @@ class Experience extends Component {
         <InputBox name="City" num={num} />
         <InputBox name="From" num={num} />
         <InputBox name="To" num={num} />
-        <button className="del-btn">Delete</button>
+        <button className="del-btn" onClick={this.props.delExp}>
+          Delete
+        </button>
       </div>
     );
   }

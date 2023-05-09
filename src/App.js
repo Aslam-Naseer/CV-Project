@@ -10,6 +10,7 @@ class App extends Component {
 
     this.state = { cv: emptyState };
     this.addExperience = this.addExperience.bind(this);
+    this.delExperience = this.delExperience.bind(this);
   }
 
   // changeInfo(id, text) {
@@ -23,22 +24,35 @@ class App extends Component {
   // }
 
   addExperience() {
-    this.setState(
-      {
-        cv: {
-          ...this.state.cv,
-          experience: [...this.state.cv.experience, {}],
-        },
+    this.setState({
+      cv: {
+        ...this.state.cv,
+        experience: [...this.state.cv.experience, {}],
       },
-      console.log(this.state.cv.experience)
-    );
+    });
+  }
+
+  delExperience() {
+    const arr = [...this.state.cv.experience];
+    arr.shift();
+
+    this.setState({
+      cv: {
+        ...this.state.cv,
+        experience: arr,
+      },
+    });
   }
 
   render() {
     return (
       <div>
         <Header />
-        <CvForm addExp={this.addExperience} cv={this.state.cv} />
+        <CvForm
+          addExp={this.addExperience}
+          cv={this.state.cv}
+          delExp={this.delExperience}
+        />
       </div>
     );
   }

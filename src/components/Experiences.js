@@ -7,7 +7,7 @@ class Experiences extends Component {
     const expDivs = [];
     this.props.exps.forEach((expItem) => {
       c += 1;
-      expDivs.push(<Experience num={c} />);
+      expDivs.push(<Experience num={c} delExp={this.props.delExp} />);
     });
 
     return (
