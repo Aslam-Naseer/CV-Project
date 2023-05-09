@@ -27,7 +27,11 @@ class Experience extends Component {
           handleChange={this.props.handleChange}
         />
         <InputBox name="To" num={num} handleChange={this.props.handleChange} />
-        <button className="del-btn" onClick={this.props.delExp}>
+        <button
+          className="del-btn"
+          onClick={this.props.delExp}
+          data-num={this.props.num}
+        >
           Delete
         </button>
       </div>

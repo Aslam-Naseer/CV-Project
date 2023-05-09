@@ -29,9 +29,10 @@ class App extends Component {
     });
   }
 
-  delExperience() {
+  delExperience(e) {
+    const n = e.target.dataset.num;
     const arr = [...this.state.cv.experience];
-    arr.pop();
+    arr.splice(n, 1);
 
     this.setState({
       cv: {
