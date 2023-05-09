@@ -8,6 +8,8 @@ class InputBox extends Component {
         id={name + num}
         placeholder={name}
         onChange={this.props.handleChange}
+        data-type={this.props.name}
+        data-num={this.props.num}
       />
     );
   }

@@ -6,11 +6,27 @@ class Experience extends Component {
     const { num } = this.props;
     return (
       <div className="experience">
-        <InputBox name="Position" num={num} />
-        <InputBox name="Company" num={num} />
-        <InputBox name="City" num={num} />
-        <InputBox name="From" num={num} />
-        <InputBox name="To" num={num} />
+        <InputBox
+          name="Position"
+          num={num}
+          handleChange={this.props.handleChange}
+        />
+        <InputBox
+          name="Company"
+          num={num}
+          handleChange={this.props.handleChange}
+        />
+        <InputBox
+          name="City"
+          num={num}
+          handleChange={this.props.handleChange}
+        />
+        <InputBox
+          name="From"
+          num={num}
+          handleChange={this.props.handleChange}
+        />
+        <InputBox name="To" num={num} handleChange={this.props.handleChange} />
         <button className="del-btn" onClick={this.props.delExp}>
           Delete
         </button>

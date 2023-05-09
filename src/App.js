@@ -14,6 +14,7 @@ class App extends Component {
     this.addEducation = this.addEducation.bind(this);
     this.delEducation = this.delEducation.bind(this);
     this.handleChangePersonal = this.handleChangePersonal.bind(this);
+    this.handleChangeExperience = this.handleChangeExperience.bind(this);
 
     this.showCv = this.showCv.bind(this);
   }
@@ -29,7 +30,7 @@ class App extends Component {
 
   delExperience() {
     const arr = [...this.state.cv.experience];
-    arr.shift();
+    arr.pop();
 
     this.setState({
       cv: {
@@ -50,7 +51,7 @@ class App extends Component {
 
   delEducation() {
     const arr = [...this.state.cv.education];
-    arr.shift();
+    arr.pop();
 
     this.setState({
       cv: {
@@ -75,6 +76,23 @@ class App extends Component {
     });
   }
 
+  handleChangeExperience(e) {
+    const id = e.target.dataset.type;
+    const num = e.target.dataset.num;
+    const text = e.target.value;
+
+    const arr = [...this.state.cv.experience];
+
+    // console.log({ id, num, text, arr });
+    arr[num][id] = text;
+    this.setState({
+      cv: {
+        ...this.state.cv,
+        experience: arr,
+      },
+    });
+  }
+
   showCv() {
     console.log(this.state.cv);
   }
@@ -90,6 +108,7 @@ class App extends Component {
           addEdu={this.addEducation}
           delEdu={this.delEducation}
           changePersonal={this.handleChangePersonal}
+          changeExperience={this.handleChangeExperience}
         />
         <button onClick={this.showCv}>Show</button>
       </div>
