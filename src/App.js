@@ -11,6 +11,8 @@ class App extends Component {
     this.state = { cv: emptyState };
     this.addExperience = this.addExperience.bind(this);
     this.delExperience = this.delExperience.bind(this);
+    this.addEducation = this.addEducation.bind(this);
+    this.delEducation = this.delEducation.bind(this);
   }
 
   // changeInfo(id, text) {
@@ -44,14 +46,37 @@ class App extends Component {
     });
   }
 
+  addEducation() {
+    this.setState({
+      cv: {
+        ...this.state.cv,
+        education: [...this.state.cv.education, {}],
+      },
+    });
+  }
+
+  delEducation() {
+    const arr = [...this.state.cv.education];
+    arr.shift();
+
+    this.setState({
+      cv: {
+        ...this.state.cv,
+        education: arr,
+      },
+    });
+  }
+
   render() {
     return (
       <div>
         <Header />
         <CvForm
-          addExp={this.addExperience}
           cv={this.state.cv}
+          addExp={this.addExperience}
           delExp={this.delExperience}
+          addEdu={this.addEducation}
+          delEdu={this.delEducation}
         />
       </div>
     );

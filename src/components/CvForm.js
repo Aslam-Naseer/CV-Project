@@ -13,7 +13,11 @@ class CvForm extends Component {
           delExp={this.props.delExp}
           exps={this.props.cv.experience}
         />
-        <EducationList />
+        <EducationList
+          addEdu={this.props.addEdu}
+          delEdu={this.props.delEdu}
+          edus={this.props.cv.education}
+        />
       </div>
     );
   }

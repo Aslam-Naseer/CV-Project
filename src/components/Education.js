@@ -12,7 +12,9 @@ class Education extends Component {
         <InputBox name="Subject" num={num} />
         <InputBox name="From" num={num} />
         <InputBox name="To" num={num} />
-        <button className="del-btn">Delete</button>
+        <button className="del-btn" onClick={this.props.delEdu}>
+          Delete
+        </button>
       </div>
     );
   }
