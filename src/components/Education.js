@@ -3,35 +3,14 @@ import InputBox from "./InputBox";
 
 class Education extends Component {
   render() {
-    const { num } = this.props;
     return (
       <div className="education">
-        <InputBox
-          name="University"
-          num={num}
-          handleChange={this.props.handleChange}
-        />
-        <InputBox
-          name="City"
-          num={num}
-          handleChange={this.props.handleChange}
-        />
-        <InputBox
-          name="Degree"
-          num={num}
-          handleChange={this.props.handleChange}
-        />
-        <InputBox
-          name="Subject"
-          num={num}
-          handleChange={this.props.handleChange}
-        />
-        <InputBox
-          name="From"
-          num={num}
-          handleChange={this.props.handleChange}
-        />
-        <InputBox name="To" num={num} handleChange={this.props.handleChange} />
+        <InputBox name="University" {...this.props} />
+        <InputBox name="City" {...this.props} />
+        <InputBox name="Degree" {...this.props} />
+        <InputBox name="Subject" {...this.props} />
+        <InputBox name="From" {...this.props} />
+        <InputBox name="To" {...this.props} />
         <button
           className="del-btn"
           onClick={this.props.delEdu}
