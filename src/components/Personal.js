@@ -11,7 +11,7 @@ class Personal extends Component {
         <InputBox name="phone" {...this.props} />
         <InputBox name="mail" {...this.props} />
         <InputBox name="place" {...this.props} />
-        <textarea id="descr"></textarea>
+        <textarea id="about" onChange={this.props.handleChange}></textarea>
       </div>
     );
   }

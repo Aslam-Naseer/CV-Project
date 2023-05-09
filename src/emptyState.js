@@ -5,6 +5,7 @@ const emptyState = {
     phone: "",
     mail: "",
     place: "",
+    about: "",
   },
   education: [
     {
