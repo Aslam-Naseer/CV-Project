@@ -50,6 +50,7 @@ const emptyState = {
       university: "",
       city: "",
       degree: "",
+      subject: "",
       from: "",
       to: "",
     },

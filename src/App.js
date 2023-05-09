@@ -19,6 +19,7 @@ class App extends Component {
 
     this.showCv = this.showCv.bind(this);
     this.loadEg = this.loadEg.bind(this);
+    this.resetForm = this.resetForm.bind(this);
   }
 
   addExperience() {
@@ -120,6 +121,10 @@ class App extends Component {
     this.setState({ cv: statesEg.exampleState });
   }
 
+  resetForm() {
+    this.setState({ cv: statesEg.emptyState });
+  }
+
   render() {
     return (
       <div className="app">
@@ -136,6 +141,7 @@ class App extends Component {
         />
         <button onClick={this.showCv}>Show</button>
         <button onClick={this.loadEg}>Load</button>
+        <button onClick={this.resetForm}>Reset</button>
       </div>
     );
   }
