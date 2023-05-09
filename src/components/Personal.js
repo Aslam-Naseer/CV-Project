@@ -6,11 +6,11 @@ class Personal extends Component {
     return (
       <div className="personal-info">
         <p>Personal Information</p>
-        <InputBox name="name" handleChange={this.props.handleChange} />
-        <InputBox name="title" handleChange={this.props.handleChange} />
-        <InputBox name="phone" handleChange={this.props.handleChange} />
-        <InputBox name="mail" handleChange={this.props.handleChange} />
-        <InputBox name="place" handleChange={this.props.handleChange} />
+        <InputBox name="name" {...this.props} />
+        <InputBox name="title" {...this.props} />
+        <InputBox name="phone" {...this.props} />
+        <InputBox name="mail" {...this.props} />
+        <InputBox name="place" {...this.props} />
         <textarea id="descr"></textarea>
       </div>
     );

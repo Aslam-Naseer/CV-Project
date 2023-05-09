@@ -5,11 +5,11 @@ class Experience extends Component {
   render() {
     return (
       <div className="experience">
-        <InputBox name="Position" {...this.props} />
-        <InputBox name="Company" {...this.props} />
-        <InputBox name="City" {...this.props} />
-        <InputBox name="From" {...this.props} />
-        <InputBox name="To" {...this.props} />
+        <InputBox name="position" {...this.props} />
+        <InputBox name="company" {...this.props} />
+        <InputBox name="city" {...this.props} />
+        <InputBox name="from" {...this.props} />
+        <InputBox name="to" {...this.props} />
         <button
           className="del-btn"
           onClick={this.props.delExp}

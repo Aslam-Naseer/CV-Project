@@ -7,7 +7,10 @@ class CvForm extends Component {
   render() {
     return (
       <div className="cv-form">
-        <Personal handleChange={this.props.changePersonal} />
+        <Personal
+          handleChange={this.props.changePersonal}
+          values={this.props.cv.personalInfo}
+        />
         <Experiences
           addExp={this.props.addExp}
           delExp={this.props.delExp}
