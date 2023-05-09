@@ -13,17 +13,10 @@ class App extends Component {
     this.delExperience = this.delExperience.bind(this);
     this.addEducation = this.addEducation.bind(this);
     this.delEducation = this.delEducation.bind(this);
-  }
+    this.handleChangePersonal = this.handleChangePersonal.bind(this);
 
-  // changeInfo(id, text) {
-  //   this.setState({
-  //     ...this.state,
-  //     personalInfo: {
-  //       ...this.state.personalInfo,
-  //       [id]: text,
-  //     },
-  //   });
-  // }
+    this.showCv = this.showCv.bind(this);
+  }
 
   addExperience() {
     this.setState({
@@ -67,6 +60,25 @@ class App extends Component {
     });
   }
 
+  handleChangePersonal(e) {
+    const id = e.target.id;
+    const text = e.target.value;
+
+    this.setState({
+      cv: {
+        ...this.state.cv,
+        personalInfo: {
+          ...this.state.cv.personalInfo,
+          [id]: text,
+        },
+      },
+    });
+  }
+
+  showCv() {
+    console.log(this.state.cv);
+  }
+
   render() {
     return (
       <div>
@@ -77,7 +89,9 @@ class App extends Component {
           delExp={this.delExperience}
           addEdu={this.addEducation}
           delEdu={this.delEducation}
+          changePersonal={this.handleChangePersonal}
         />
+        <button onClick={this.showCv}>Show</button>
       </div>
     );
   }
