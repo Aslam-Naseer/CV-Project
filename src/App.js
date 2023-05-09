@@ -122,7 +122,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <Header />
         <CvForm
           cv={this.state.cv}

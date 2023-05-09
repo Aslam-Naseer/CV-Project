@@ -1,6 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
 body {
   background-color: #121212;
-  color: white;
+}
+
+input,
+textarea,
+button {
+  background-color: #222222;
+  resize: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+}
+
+textarea {
+  height: 100px;
+}
+
+p {
+  margin: 35px 10px 0 10px;
+  font-size: 24px;
 }
 
 .header {
@@ -9,21 +34,28 @@ body {
   font-size: 24px;
 }
 
+.education,
+.experience,
 .personal-info {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-.experience {
-  display: flex;
-  flex-direction: column;
-}
-
-.education {
-  display: flex;
-  flex-direction: column;
+.personal-info>p {
+  margin: 15px 10px 10px 10px;
 }
 
 .cv-form {
+  margin: 30px auto;
   border: 1px solid red;
+  width: min(750px, 90%);
+  padding: 25px;
+}
+
+.experiences,
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
