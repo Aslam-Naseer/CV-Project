@@ -6,8 +6,14 @@ class EducationList extends Component {
     let c = 0;
     const eduDivs = [];
     this.props.edus.forEach((expItem) => {
+      eduDivs.push(
+        <Education
+          num={c}
+          delEdu={this.props.delEdu}
+          handleChange={this.props.handleChange}
+        />
+      );
       c += 1;
-      eduDivs.push(<Education num={c} delEdu={this.props.delEdu} />);
     });
 
     return (

@@ -18,6 +18,7 @@ class CvForm extends Component {
           addEdu={this.props.addEdu}
           delEdu={this.props.delEdu}
           edus={this.props.cv.education}
+          handleChange={this.props.changeEducation}
         />
       </div>
     );

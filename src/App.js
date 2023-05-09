@@ -15,6 +15,7 @@ class App extends Component {
     this.delEducation = this.delEducation.bind(this);
     this.handleChangePersonal = this.handleChangePersonal.bind(this);
     this.handleChangeExperience = this.handleChangeExperience.bind(this);
+    this.handleChangeEducation = this.handleChangeEducation.bind(this);
 
     this.showCv = this.showCv.bind(this);
   }
@@ -83,12 +84,27 @@ class App extends Component {
 
     const arr = [...this.state.cv.experience];
 
-    // console.log({ id, num, text, arr });
     arr[num][id] = text;
     this.setState({
       cv: {
         ...this.state.cv,
         experience: arr,
+      },
+    });
+  }
+
+  handleChangeEducation(e) {
+    const id = e.target.dataset.type;
+    const num = e.target.dataset.num;
+    const text = e.target.value;
+
+    const arr = [...this.state.cv.education];
+
+    arr[num][id] = text;
+    this.setState({
+      cv: {
+        ...this.state.cv,
+        education: arr,
       },
     });
   }
@@ -109,6 +125,7 @@ class App extends Component {
           delEdu={this.delEducation}
           changePersonal={this.handleChangePersonal}
           changeExperience={this.handleChangeExperience}
+          changeEducation={this.handleChangeEducation}
         />
         <button onClick={this.showCv}>Show</button>
       </div>
