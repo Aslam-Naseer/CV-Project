@@ -138,10 +138,10 @@ class App extends Component {
           changePersonal={this.handleChangePersonal}
           changeExperience={this.handleChangeExperience}
           changeEducation={this.handleChangeEducation}
+          showCv={this.showCv}
+          loadEg={this.loadEg}
+          resetForm={this.resetForm}
         />
-        <button onClick={this.showCv}>Show</button>
-        <button onClick={this.loadEg}>Load</button>
-        <button onClick={this.resetForm}>Reset</button>
       </div>
     );
   }

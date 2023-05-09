@@ -2,6 +2,7 @@ import { Component } from "react";
 import Personal from "./Personal";
 import Experiences from "./Experiences";
 import EducationList from "./EducationList";
+import FormButtons from "./FormButtons";
 
 class CvForm extends Component {
   render() {
@@ -22,6 +23,11 @@ class CvForm extends Component {
           delEdu={this.props.delEdu}
           edus={this.props.cv.education}
           handleChange={this.props.changeEducation}
+        />
+        <FormButtons
+          showCv={this.props.showCv}
+          loadEg={this.props.loadEg}
+          resetForm={this.props.resetForm}
         />
       </div>
     );
