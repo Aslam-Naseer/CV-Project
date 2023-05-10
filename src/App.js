@@ -9,7 +9,7 @@ class App extends Component {
   constructor() {
     super();
 
-    this.state = { cv: statesEg.emptyState };
+    this.state = { cv: statesEg.exampleState };
     this.addExperience = this.addExperience.bind(this);
     this.delExperience = this.delExperience.bind(this);
     this.addEducation = this.addEducation.bind(this);

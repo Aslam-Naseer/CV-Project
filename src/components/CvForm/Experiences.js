@@ -12,6 +12,7 @@ class Experiences extends Component {
           delExp={this.props.delExp}
           handleChange={this.props.handleChange}
           values={this.props.exps[c]}
+          key={"expPrev" + c}
         />
       );
       c += 1;

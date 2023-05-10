@@ -12,6 +12,7 @@ class EducationList extends Component {
           delEdu={this.props.delEdu}
           handleChange={this.props.handleChange}
           values={this.props.edus[c]}
+          key={"eduPrev" + c}
         />
       );
       c += 1;

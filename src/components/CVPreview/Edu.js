@@ -6,7 +6,7 @@ class Edu extends Component {
     let c = 0;
     const eduDivs = [];
     this.props.edus.forEach((item) => {
-      eduDivs.push(<EduItem edu={this.props.edus[c]} />);
+      eduDivs.push(<EduItem edu={this.props.edus[c]} key={"edu" + c} />);
       c += 1;
     });
 
