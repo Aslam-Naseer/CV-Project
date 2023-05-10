@@ -33,7 +33,6 @@ textarea {
   height: 100px;
 }
 
-
 button {
   cursor: pointer;
   transition: all 200ms;
@@ -50,7 +49,11 @@ button:hover {
 .header {
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  padding: 45px 0;
+  background-color: #222;
 }
 
 .education,
@@ -68,7 +71,7 @@ button:hover {
 .cv-form,
 .cv-preview {
   background-color: #121212;
-  margin: 30px auto;
+  margin: 40px auto;
   width: min(570px, 90%);
   padding: 25px;
   font-family: 'Nunito', sans-serif;
@@ -130,12 +133,6 @@ button:hover {
   grid-template-columns: 5fr 3fr;
   gap: 40px 0;
   padding: 55px 10px 25px 10px;
-}
-
-.info-preview>div,
-.exp-item>div,
-.edu-item>div {
-  /* border: 1px solid yellow */
 }
 
 .info-name {

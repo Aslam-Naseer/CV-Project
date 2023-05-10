@@ -1,6 +1,6 @@
 import { Component } from "react";
 import CvForm from "./components/CvForm/CvForm";
-import Header from "./components/CvForm/header";
+import Header from "./components/header";
 import "./style.css";
 import statesEg from "./emptyState";
 import CvPreview from "./components/CVPreview/CvPreview";
