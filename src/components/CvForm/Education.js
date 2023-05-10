@@ -7,7 +7,6 @@ class Education extends Component {
       <div className="education">
         <InputBox name="university" {...this.props} />
         <InputBox name="city" {...this.props} />
-        <InputBox name="degree" {...this.props} />
         <InputBox name="subject" {...this.props} />
         <InputBox name="from" {...this.props} />
         <InputBox name="to" {...this.props} />

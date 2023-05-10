@@ -10,10 +10,9 @@ const exampleState = {
   },
   education: [
     {
-      university: "Engineering College, Pune",
+      university: "Engineering College",
       city: "Pune, India",
-      degree: "B-Tech",
-      subject: "CSE",
+      subject: "B-Tech CSE",
       from: "2014",
       to: "2018",
     },
@@ -49,7 +48,6 @@ const emptyState = {
     {
       university: "",
       city: "",
-      degree: "",
       subject: "",
       from: "",
       to: "",
