@@ -194,3 +194,17 @@ button:hover {
   font-size: 22px;
   font-weight: 700;
 }
+
+@media (min-width: 1500px) {
+
+  .app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 0 10px;
+  }
+
+  .header {
+    grid-column: 1/3;
+  }
+}
