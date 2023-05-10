@@ -12,7 +12,7 @@ class EduItem extends Component {
         </div>
         <div>
           <div>{edu.subject}</div>
-          <div>
+          <div className="edu-place">
             {edu.university}
             <span>{", "}</span>
             {edu.city}

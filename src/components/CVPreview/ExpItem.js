@@ -12,7 +12,7 @@ class ExpItem extends Component {
         </div>
         <div>
           <div>{exp.position}</div>
-          <div>
+          <div className="exp-place">
             {exp.company}
             <span>{", "}</span>
             {exp.city}

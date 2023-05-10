@@ -11,8 +11,8 @@ class Edu extends Component {
     });
 
     return (
-      <div>
-        <p>Education</p>
+      <div className="edu-preview">
+        <p className="preview-para">Education</p>
         {eduDivs}
       </div>
     );

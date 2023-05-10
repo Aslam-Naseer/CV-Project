@@ -11,8 +11,8 @@ class Exp extends Component {
     });
 
     return (
-      <div>
-        <p>Experiences</p>
+      <div className="exps-preview">
+        <p className="preview-para">Experiences</p>
         {expDivs}
       </div>
     );
