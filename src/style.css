@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Nunito:wght@400;700&display=swap');
+
+:root {
+  --cv-theme: rgb(228, 228, 0);
+}
 
 * {
   margin: 0;
@@ -66,7 +70,7 @@ button:hover {
   background-color: #121212;
   margin: 30px auto;
   border: 1px solid red;
-  width: min(750px, 90%);
+  width: min(570px, 90%);
   padding: 25px;
   font-family: 'Nunito', sans-serif;
 }
@@ -114,17 +118,46 @@ button:hover {
 .info-preview {
   display: grid;
   grid-template-columns: 5fr 3fr;
+  gap: 40px 0;
+  padding: 55px 10px 25px 10px;
 }
 
 .info-preview>div,
 .exp-item>div,
 .edu-item>div {
-  border: 1px solid yellow
+  /* border: 1px solid yellow */
+}
+
+.info-name {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--cv-theme);
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.info-title {
+  font-size: 22px;
+}
+
+.info-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  font-size: 17px;
+}
+
+.icon {
+  width: 12px;
+  fill: white;
+  margin: 0 10px;
 }
 
 .about-div {
+  border-top: 3px solid var(--cv-theme);
   grid-column: 1/3;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .exp-item,

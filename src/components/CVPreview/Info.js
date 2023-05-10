@@ -1,4 +1,7 @@
 import { Component } from "react";
+import { ReactComponent as PhoneIcon } from "../../svg/phone-solid.svg";
+import { ReactComponent as AddressIcon } from "../../svg/location-dot-solid.svg";
+import { ReactComponent as EmailIcon } from "../../svg/envelope-solid.svg";
 
 class Info extends Component {
   render() {
@@ -6,13 +9,22 @@ class Info extends Component {
     return (
       <div className="info-preview">
         <div>
-          <div>{pi.name}</div>
-          <div>{pi.title}</div>
+          <div className="info-name">{pi.name}</div>
+          <div className="info-title">{pi.title}</div>
         </div>
-        <div>
-          <div>{pi.phone}</div>
-          <div>{pi.mail}</div>
-          <div>{pi.place}</div>
+        <div className="info-more">
+          <div>
+            <PhoneIcon className="icon" />
+            {pi.phone}
+          </div>
+          <div>
+            <EmailIcon className="icon" />
+            {pi.mail}
+          </div>
+          <div>
+            <AddressIcon className="icon" />
+            {pi.place}
+          </div>
         </div>
         <div className="about-div">{pi.about}</div>
       </div>
