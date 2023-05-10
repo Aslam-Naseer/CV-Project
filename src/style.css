@@ -116,11 +116,17 @@ button:hover {
   grid-template-columns: 5fr 3fr;
 }
 
-.info-preview>div {
+.info-preview>div,
+.exp-item>div {
   border: 1px solid yellow
 }
 
 .about-div {
   grid-column: 1/3;
   padding: 20px;
+}
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
 }
