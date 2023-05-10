@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4b60a246.css",
+    "main.js": "/static/js/main.c795d7e3.js",
+    "index.html": "/index.html",
+    "static/media/phone-solid.svg": "/static/media/phone-solid.b4a074baa24a40414433c87293d74020.svg",
+    "static/media/envelope-solid.svg": "/static/media/envelope-solid.6345f82ededa4dc800949734956dc764.svg",
+    "static/media/location-dot-solid.svg": "/static/media/location-dot-solid.2e0ef750ef3975644482ba424ba65ae0.svg",
+    "main.4b60a246.css.map": "/static/css/main.4b60a246.css.map",
+    "main.c795d7e3.js.map": "/static/js/main.c795d7e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b60a246.css",
+    "static/js/main.c795d7e3.js"
+  ]
+}
