@@ -3,6 +3,7 @@ import CvForm from "./components/CvForm/CvForm";
 import Header from "./components/CvForm/header";
 import "./style.css";
 import statesEg from "./emptyState";
+import CvPreview from "./components/CVPreview/CvPreview";
 
 class App extends Component {
   constructor() {
@@ -142,6 +143,7 @@ class App extends Component {
           loadEg={this.loadEg}
           resetForm={this.resetForm}
         />
+        <CvPreview cv={this.state.cv} />
       </div>
     );
   }

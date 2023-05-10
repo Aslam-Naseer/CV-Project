@@ -68,7 +68,8 @@ p {
   margin: 15px 10px 10px 10px;
 }
 
-.cv-form {
+.cv-form,
+.cv-preview {
   background-color: #121212;
   margin: 30px auto;
   border: 1px solid red;
@@ -108,4 +109,17 @@ p {
 
 .reset-btn {
   background-color: #d80000;
+}
+
+.info-preview {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+}
+
+.info-preview>div {
+  border: 1px solid yellow
+}
+
+.about-div {
+  grid-column: 1/3;
 }
