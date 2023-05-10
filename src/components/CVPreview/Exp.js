@@ -6,7 +6,7 @@ class Exp extends Component {
     let c = 0;
     const expDivs = [];
     this.props.exps.forEach((expItem) => {
-      expDivs.push(<ExpItem exp={this.props.exps[c]} />);
+      expDivs.push(<ExpItem exp={this.props.exps[c]} key={"exp" + c} />);
       c += 1;
     });
 
