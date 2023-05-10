@@ -69,10 +69,20 @@ button:hover {
 .cv-preview {
   background-color: #121212;
   margin: 30px auto;
-  border: 1px solid red;
   width: min(570px, 90%);
   padding: 25px;
   font-family: 'Nunito', sans-serif;
+  aspect-ratio: 1/1.414;
+}
+
+.cv-form {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.cv-preview {
+  border: 1px solid red;
+  border-radius: 3px;
 }
 
 .experiences,
@@ -132,7 +142,8 @@ button:hover {
   font-family: 'Montserrat', sans-serif;
   color: var(--cv-theme);
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 36px;
+  margin-bottom: 8px;
   font-weight: 700;
 }
 
