@@ -5,7 +5,7 @@ class Personal extends Component {
   render() {
     return (
       <div className="personal-info">
-        <p>Personal Information</p>
+        <p className="form-para">Personal Information</p>
         <InputBox name="name" {...this.props} />
         <InputBox name="title" {...this.props} />
         <InputBox name="phone" {...this.props} />

@@ -19,7 +19,7 @@ class EducationList extends Component {
 
     return (
       <div className="edu-list">
-        <p>Education</p>
+        <p className="form-para">Education</p>
         {eduDivs}
         <button className="add-btn" onClick={this.props.addEdu}>
           Add

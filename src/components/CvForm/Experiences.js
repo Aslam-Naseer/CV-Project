@@ -19,7 +19,7 @@ class Experiences extends Component {
 
     return (
       <div className="experiences">
-        <p>Experiences</p>
+        <p className="form-para">Experiences</p>
         {expDivs}
         <button className="add-btn" onClick={this.props.addExp}>
           Add
