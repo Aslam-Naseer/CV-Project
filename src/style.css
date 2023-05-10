@@ -117,7 +117,8 @@ button:hover {
 }
 
 .info-preview>div,
-.exp-item>div {
+.exp-item>div,
+.edu-item>div {
   border: 1px solid yellow
 }
 
@@ -126,7 +127,8 @@ button:hover {
   padding: 20px;
 }
 
-.exp-item {
+.exp-item,
+.edu-item {
   display: grid;
   grid-template-columns: 2fr 5fr;
 }
