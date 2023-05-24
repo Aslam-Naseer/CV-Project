@@ -6,6 +6,7 @@ import statesEg from "./emptyState";
 import CvPreview from "./components/CVPreview/CvPreview";
 
 import firestore from "./firestore";
+import { async } from "@firebase/util";
 
 class App extends Component {
   constructor() {
@@ -121,8 +122,9 @@ class App extends Component {
     firestore.upload(this.state.cv);
   }
 
-  loadEg() {
-    this.setState({ cv: statesEg.exampleState });
+  async loadEg() {
+    const cv = await firestore.download();
+    this.setState({ cv });
   }
 
   resetForm() {
