@@ -1,8 +1,14 @@
 import React, { Component } from "react";
+import SignIn from "./SignIn";
 
 class Header extends Component {
   render() {
-    return <div className="header">CV PROJECT</div>;
+    return (
+      <div className="header">
+        CV PROJECT
+        <SignIn />
+      </div>
+    );
   }
 }
 
