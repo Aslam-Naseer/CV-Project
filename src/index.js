@@ -23,6 +23,7 @@ root.render(
 
 function initFirebaseAuth() {
   onAuthStateChanged(getAuth(), authStateObserver);
+  onAuthStateChanged(getAuth(), (u) => console.log("hih"));
 }
 
 function authStateObserver(user) {
