@@ -5,6 +5,8 @@ import "./style.css";
 import statesEg from "./emptyState";
 import CvPreview from "./components/CVPreview/CvPreview";
 
+import firestore from "./firestore";
+
 class App extends Component {
   constructor() {
     super();
@@ -116,6 +118,7 @@ class App extends Component {
 
   showCv() {
     console.log(this.state.cv);
+    firestore.upload(this.state.cv);
   }
 
   loadEg() {
