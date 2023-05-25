@@ -1,5 +1,4 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 initializeApp({
   apiKey: "AIzaSyCrMSXUD3XPnlxakwXkYUnngyEfmusJ1sc",
