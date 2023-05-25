@@ -52,7 +52,7 @@ class SignIn extends Component {
   render() {
     return (
       <div className="current-user">
-        {this.state.isSigned ? getAuth().currentUser.displayName : ""}{" "}
+        {getAuth().currentUser ? getAuth().currentUser.displayName : ""}{" "}
         {this.state.isSigned ? this.signOutBtn : this.signInBtn}
       </div>
     );

@@ -7,6 +7,7 @@ import CvPreview from "./components/CVPreview/CvPreview";
 
 import firestore from "./firestore";
 import { async } from "@firebase/util";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 class App extends Component {
   constructor() {
@@ -129,6 +130,10 @@ class App extends Component {
 
   resetForm() {
     this.setState({ cv: statesEg.emptyState });
+  }
+
+  componentDidMount() {
+    onAuthStateChanged(getAuth(), this.loadEg);
   }
 
   render() {
