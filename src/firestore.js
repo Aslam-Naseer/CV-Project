@@ -27,7 +27,6 @@ const download = async () => {
     if (uid() === null) return statesEg.exampleState;
 
     const q = await getDoc(doc(fs, uid()));
-    console.log(q.data().cv);
     return q.exists ? q.data().cv : statesEg.exampleState;
   } catch (e) {
     console.error("Error loading data Firebase Database ", e);

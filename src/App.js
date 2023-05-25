@@ -6,7 +6,6 @@ import statesEg from "./emptyState";
 import CvPreview from "./components/CVPreview/CvPreview";
 
 import firestore from "./firestore";
-import { async } from "@firebase/util";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 class App extends Component {
@@ -22,8 +21,8 @@ class App extends Component {
     this.handleChangeExperience = this.handleChangeExperience.bind(this);
     this.handleChangeEducation = this.handleChangeEducation.bind(this);
 
-    this.showCv = this.showCv.bind(this);
-    this.loadEg = this.loadEg.bind(this);
+    this.saveCv = this.saveCv.bind(this);
+    this.loadCv = this.loadCv.bind(this);
     this.resetForm = this.resetForm.bind(this);
   }
 
@@ -118,12 +117,11 @@ class App extends Component {
     });
   }
 
-  showCv() {
-    console.log(this.state.cv);
+  saveCv() {
     firestore.upload(this.state.cv);
   }
 
-  async loadEg() {
+  async loadCv() {
     const cv = await firestore.download();
     this.setState({ cv });
   }
@@ -133,7 +131,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    onAuthStateChanged(getAuth(), this.loadEg);
+    onAuthStateChanged(getAuth(), this.loadCv);
   }
 
   render() {
@@ -149,8 +147,8 @@ class App extends Component {
           changePersonal={this.handleChangePersonal}
           changeExperience={this.handleChangeExperience}
           changeEducation={this.handleChangeEducation}
-          showCv={this.showCv}
-          loadEg={this.loadEg}
+          saveCv={this.saveCv}
+          loadCv={this.loadCv}
           resetForm={this.resetForm}
         />
         <CvPreview cv={this.state.cv} />

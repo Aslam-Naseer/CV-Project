@@ -3,7 +3,6 @@ import { Component } from "react";
 class InputBox extends Component {
   render() {
     const { name, num = "" } = this.props;
-    // console.log(this.props.values);
     return (
       <input
         id={name + num}

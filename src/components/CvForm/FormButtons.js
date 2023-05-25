@@ -4,10 +4,10 @@ class FormButtons extends Component {
   render() {
     return (
       <div className="form-btns">
-        <button onClick={this.props.showCv} className="show-btn">
-          Show
+        <button onClick={this.props.saveCv} className="show-btn">
+          Save
         </button>
-        <button onClick={this.props.loadEg} className="load-btn">
+        <button onClick={this.props.loadCv} className="load-btn">
           Load
         </button>
         <button onClick={this.props.resetForm} className="reset-btn">

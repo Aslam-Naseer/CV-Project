@@ -25,8 +25,8 @@ class CvForm extends Component {
           handleChange={this.props.changeEducation}
         />
         <FormButtons
-          showCv={this.props.showCv}
-          loadEg={this.props.loadEg}
+          saveCv={this.props.saveCv}
+          loadCv={this.props.loadCv}
           resetForm={this.props.resetForm}
         />
       </div>
