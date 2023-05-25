@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CV-Project/static/css/main.4b60a246.css",
-    "main.js": "/CV-Project/static/js/main.9bef6259.js",
+    "main.css": "/CV-Project/static/css/main.a55e02cd.css",
+    "main.js": "/CV-Project/static/js/main.357ffc1e.js",
     "index.html": "/CV-Project/index.html",
     "static/media/phone-solid.svg": "/CV-Project/static/media/phone-solid.b4a074baa24a40414433c87293d74020.svg",
     "static/media/envelope-solid.svg": "/CV-Project/static/media/envelope-solid.6345f82ededa4dc800949734956dc764.svg",
     "static/media/location-dot-solid.svg": "/CV-Project/static/media/location-dot-solid.2e0ef750ef3975644482ba424ba65ae0.svg",
-    "main.4b60a246.css.map": "/CV-Project/static/css/main.4b60a246.css.map",
-    "main.9bef6259.js.map": "/CV-Project/static/js/main.9bef6259.js.map"
+    "main.a55e02cd.css.map": "/CV-Project/static/css/main.a55e02cd.css.map",
+    "main.357ffc1e.js.map": "/CV-Project/static/js/main.357ffc1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b60a246.css",
-    "static/js/main.9bef6259.js"
+    "static/css/main.a55e02cd.css",
+    "static/js/main.357ffc1e.js"
   ]
 }
